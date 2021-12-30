@@ -24,6 +24,8 @@ J = \sum_k (||cte[k]||2 + ||epsi[k]||2 + ||v[k]-v_des||2) + \sum_k (||a[k]||2 + 
 ```
 The first sum asks to follow closely the desire trajectory by minimizing the magnitude of `cte`, `epsi`, and `v-v_des`. The second sum asks to keep the actuation low (efficiency). The third sum asks to not have abrupt changes in accelerating/decelerating or steering (comfort). 
 
+![mpc_preview](./mpc_preview.png)
+
 #### Trajectory generation
 The simulator provides waypoints that act as nominal trajectory. These way points have to be transformed to the car coordinate system:
 ```
